@@ -11,10 +11,10 @@
 }
 #code-wrapper{
   padding: 16px;
-  height: 100vh;
+  height: 80vh;
   display: flex;
 }
 #code{
-  width: 100%;
   overflow: hidden;
+  width: 50%;
 }

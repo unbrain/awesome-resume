@@ -8,7 +8,7 @@ let timer = setInterval(() => {
         window.clearInterval(timer)
     }
     n++
-}, 30)
+}, 0)
 
 var css1 = `/* 
  * 面试官你好，我是朝阳
@@ -20,11 +20,14 @@ var css1 = `/*
   transition: all 1s;
 }
 html{
-  background: rgb(222,222,222);
+  background: #33485E;
+  
 }
 #code{
+  background: rgba(255, 255, 255, 0.2);
   border: 1px solid #aaa;
   padding: 16px;
+  transform: perspective(2000px) rotateY(20deg);
 }
 
 /* 使用Prsim
@@ -43,24 +46,24 @@ html{
   color: #2f9c0a;
 }
 
+
 /* 加一个呼吸效果 */
 #code{
   animation: breath 0.5s infinite alternate-reverse;
 }
 @keyframes breath{
   0%{
-    box-shadow: 0 0 10px rgba(0,0,0,1)
+    box-shadow: 0 0 20px rgba(0,0,0,1)
   }
   100%{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    box-shadow: 0 0 20px rgba(0,0,0,0.5)
   }
 }
 
 /* 我需要一张白纸 */
 
 #code-wrapper{
-  width: 50%; left: 0; position: fixed; 
-  height: 100%;
+  width:100%; left: 0; position: fixed; 
 }
 /* 于是我就可以在白纸上写字了，请看右边 */
 `
