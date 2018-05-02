@@ -3,7 +3,7 @@ function writeCode(precode, code, callback) {
   let Domcode = document.querySelector('#code')
   let n = 0
   let timer = setInterval(() => {
-    Domcode.innerHTML = Prism.highlight(pcode + code.substring(0, n), Prism.languages.css, 'css');
+    Domcode.innerHTML = Prism.highlight(pcode + code.substring(0, n), Prism.languages.css, 'css')
     styleTag.innerHTML = result = pcode + code.substring(0, n)
     let now = code.substring(n + 1, n)
     pressKey(now);
@@ -118,7 +118,7 @@ function writeMarkdown(code, fn){
       
     }
     n++
-  }, 0)
+  }, 30)
   
 }
 
@@ -174,8 +174,7 @@ writeCode('', css1, () => {
           document.querySelector('#paper .content').innerHTML = marked(md);
           console.log('over')
         })
-      })
-      
+      })      
     })
   })
 })
